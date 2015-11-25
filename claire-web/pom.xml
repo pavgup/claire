@@ -13,7 +13,7 @@
 		<finalName>claire</finalName>
 		<plugins>
 			<plugin>
-			
+
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>keytool-maven-plugin</artifactId>
 				<version>1.5</version>
@@ -49,17 +49,17 @@
 				<version>2.2</version>
 				<configuration>
 					<!-- http port -->
-					<port>8080</port>
+					<port>7080</port>
 					<!-- application path always starts with / -->
 					<path>/</path>
 					<!-- enable ssl (required since we're enforcing https in our web.xml) -->
-					<httpsPort>8443</httpsPort>
+					<httpsPort>7443</httpsPort>
 					<keystoreFile>${project.build.directory}/tomcat-ssl.keystore</keystoreFile>
 					<keystorePass>tomcat-learn</keystorePass>
 				</configuration>
 			</plugin>
 			<plugin>
-				<!-- This is a workaround for a bug: https://github.com/eirslett/frontend-maven-plugin/issues/169 
+				<!-- This is a workaround for a bug: https://github.com/eirslett/frontend-maven-plugin/issues/169
 					https://github.com/eirslett/frontend-maven-plugin/issues/147 -->
 
 				<groupId>org.apache.maven.plugins</groupId>
